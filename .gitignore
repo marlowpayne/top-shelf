@@ -18,3 +18,7 @@
 !/tmp/.keep
 
 .byebug_history
+
+# node
+/client/node_modules
+/node_modules

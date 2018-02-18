@@ -1,0 +1,24 @@
+{
+  "name": "top-shelf",
+  "version": "0.1.0",
+  "description": "A top-shelf test app leveraging Rails and create-react-app",
+  "main": "client/src/index.js",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlowpayne/top-shelf.git"
+  },
+  "author": "Marlow Payne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marlowpayne/top-shelf/issues"
+  },
+  "homepage": "https://github.com/marlowpayne/top-shelf#readme"
+}
